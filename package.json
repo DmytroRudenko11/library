@@ -1,0 +1,37 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "start": "node dist/src/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "prisma:migrate": "npx prisma migrate dev",
+    "prisma:generate": "npx prisma generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmytroRudenko11/library.git"
+  },
+  "homepage": "https://github.com/DmytroRudenko11/library#readme",
+  "dependencies": {
+    "@prisma/client": "^5.12.1",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.12.3",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^5.12.1",
+    "swagger-ui-express": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.12.5",
+    "nodemon": "^3.1.0"
+  }
+}
