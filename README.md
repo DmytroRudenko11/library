@@ -32,6 +32,56 @@ This is a REST API for managing a list of books. The application allows various 
 
    This will start the server at `http://localhost:3030`.
 
+### Production Mode
+
+1. Make sure you have Node.js installed.
+
+2. Clone the repository:
+
+   ```bash
+   git clone https://github.com/DmytroRudenko11/library.git
+   ```
+
+3. Navigate to the project directory:
+
+   ```bash
+   cd library
+   ```
+
+4. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+5. Build the project:
+
+   ```bash
+   npm run build
+   ```
+
+6. Start the project in production mode:
+
+   ```bash
+   npm start
+   ```
+
+   This will start the server at `http://localhost:3030`.
+
+## Setting Up Prisma Client
+
+1. Generate Prisma Client:
+
+   ```bash
+   npm run prisma:generate
+   ```
+
+2. Apply database migrations:
+
+   ```bash
+   npm run prisma:migrate
+   ```
+
 ## Docker Compose (for development mode without MariaDB)
 
 If you don't have MariaDB or want to run the project using Docker Compose, you can use the `docker-compose.yaml` file. This file sets up an environment with Node.js and a MariaDB database image.
